@@ -1,120 +1,56 @@
-import React, { Component } from "react";
-import Particles from "react-particles-js";
+import React from 'react';
+import './Header.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faBlog } from '@fortawesome/free-solid-svg-icons';
 
-class Canvas extends Component {
-    state = {
-        width: "0px",
-        height: "0px"
-    };
-    componentDidMount() {
-        this.updateWindowDimensions();
-        window.addEventListener("resize", this.updateWindowDimensions);
-    }
-    componentWillUnmount() {
-        window.removeEventListener("resize", this.updateWindowDimensions);
-    }
-    updateWindowDimensions = () => {
-        this.setState({
-            width: `${window.innerWidth}px`,
-            height: `${window.innerHeight}px`
-        });
-    };
+class Header extends React.Component {
     render() {
-        const { width, height } = this.state;
-        console.log(width, height);
         return (
-            <Particles
-                {...this.state}
-                params={{
-                    particles: {
-                        number: {
-                            value: 70,
-                            density: {
-                                enable: true,
-                                value_area: 700,
-                            }
-                        },
-                        color: {
-                            value: "#ffffff"
-                        },
-                        shape: {
-                            type: "circle",
-                            stroke: {
-                                width: 0,
-                                color: "#000000"
-                            },
-                            image: {
-                                src: "img/github.svg",
-                                width: 100,
-                                height: 100
-                            }
-                        },
-                        opacity: {
-                            value: 0.4,
-                            random: true,
-                            anim: {
-                                enable: true,
-                                speed: 1,
-                                opacity_min: 0.1,
-                                sync: false
-                            }
-                        },
-                        size: {
-                            value: 3,
-                            random: true,
-                            anim: {
-                                enable: true,
-                                speed: 2,
-                                size_min: 0.1,
-                                sync: false
-                            }
-                        },
-                        line_linked: {
-                            enable_auto: true,
-                            distance: 130,
-                            color: "#fff",
-                            opacity: 1,
-                            width: 1,
-                            condensed_mode: {
-                                enable: false,
-                                rotateX: 600,
-                                rotateY: 600
-                            }
-                        },
-                        move: {
-                            enable: true,
-                            speed: 1.3,
-                            direction: "none",
-                            random: false,
-                            straight: false,
-                            out_mode: "out",
-                            bounce: false,
-                            attract: {
-                                enable: false,
-                                rotateX: 600,
-                                rotateY: 1200
-                            }
-                        }
-                    },
-                    interactivity: {
-                        detect_on: "canvas",
-                        events: {
-                            onhover: {
-                                enable: true,
-                                mode: "repulse",
-                            },
-                            onclick: {
-                                enable: true,
-                                mode: "push",
-                            },
-                            resize: true
-                        }
-                    },
-                    retina_detect: true
-                }}
-            />
-        );
+            <div id="pj">
+                <p className="display-1 text-light font-weight-light">
+                    Ethan <br />
+                    Borkosky
+                </p>
+                <p className="display-4 text-light font-weight-lighter">
+                    Software Developer
+                </p>
+
+                <div className="row justify-content-center">
+                    <a className="pr-3 pl-3" href="#" id="icons">
+                        <FontAwesomeIcon
+                            icon={faEnvelope}
+                            size="3x"
+                            color="white"
+                        />
+                    </a>
+                    <a className="pr-3 pl-3" href="https://www.linkedin.com/in/ethan-borkosky-764aa6186/" id="icons">
+                        <FontAwesomeIcon
+                            icon={faLinkedin}
+                            size="3x"
+                            color="white"
+                        />
+                    </a>
+                    <a className="pr-3 pl-3" href="https://github.com/eBork1" id="icons">
+                        <FontAwesomeIcon
+                            icon={faGithub}
+                            size="3x"
+                            color="white"
+                        />
+                    </a>
+                    <a className="pr-3 pl-3" href="#" id="icons">
+                        <FontAwesomeIcon
+                            icon={faBlog}
+                            size="3x"
+                            color="white"
+                        />
+                    </a>
+                </div>
+            </div>
+        )
     }
 }
 
-export default Canvas;
+export default Header;
