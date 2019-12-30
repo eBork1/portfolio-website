@@ -32,7 +32,7 @@ class Tech extends React.Component {
                                 during my 16-week web development bootcamp.
                             <br />
                                 <br />
-                                I'm always looking to expand my knowledge of programming, whether its learning a new language, framework, or development
+                                I'm always looking to expand my knowledge of programming, whether it's learning a new language, framework, or development
                                 strategy. I'm currently starting to learn c# with .NET. My ideal job is one in which I get to learn something new and advance myself as
                                 a skilled programmer and an articulate thinker.
                             <br />
