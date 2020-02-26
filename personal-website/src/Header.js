@@ -19,14 +19,14 @@ class Header extends React.Component {
                 </p>
 
                 <div className="row justify-content-center">
-                    <a className="pr-3 pl-3" href="https://www.linkedin.com/in/ethan-borkosky-764aa6186/" id="icons" title="linkedin">
+                    <a className="pr-3 pl-3" href="https://www.linkedin.com/in/ethan-borkosky-764aa6186/" target="_blank" id="icons" title="linkedin">
                         <FontAwesomeIcon
                             icon={faLinkedin}
                             size="3x"
                             color="white"
                         />
                     </a>
-                    <a className="pr-3 pl-3" href="https://github.com/eBork1" id="icons" title="github">
+                    <a className="pr-3 pl-3" href="https://github.com/eBork1" target="_blank" id="icons" title="github">
                         <FontAwesomeIcon
                             icon={faGithub}
                             size="3x"
@@ -40,7 +40,7 @@ class Header extends React.Component {
                             color="white"
                         />
                     </a>
-                    <a className="pr-3 pl-3" href="/ebork_resume.pdf" id="icons" download="ethan-borkosky-resume" title="resume" target='_blank'> 
+                    <a className="pr-3 pl-3" href="/Ethan_Borkosky_Resume.pdf" target="_blank" id="icons" download="ethan-borkosky-resume" title="resume" target='_blank'>
                         <FontAwesomeIcon
                             icon={faFile}
                             size="3x"
