@@ -5,7 +5,7 @@
 
 #repoList {
     overflow-y: auto;
-    max-height: 600px;
+    max-height: 450px;
 }
 
 #repoList>div:nth-child(even){
