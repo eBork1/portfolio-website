@@ -3,6 +3,19 @@
     font-weight: bold;
 }
 
+#repoList {
+    overflow-y: auto;
+    max-height: 600px;
+}
+
+#repoList>div:nth-child(even){
+    background-color: rgb(240, 240, 240);
+}
+
+#repoList>div:nth-child(odd){
+    background-color: rgb(255, 255, 255);
+}
+
 #cont{
     background-color: white;
     height: 100vh;
