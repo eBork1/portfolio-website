@@ -3,16 +3,17 @@ import Fade from 'react-reveal/Fade';
 import Flip from 'react-reveal/Flip';
 import Logos from './TechLogos';
 import Sample from './Snippet';
+import './Tech.css';
 
 
 class Tech extends React.Component {
     render() {
         return (
-            <div className="container-fluid">
+            <div className="container-fluid" id="techCont">
                 <div className="row">
                     <div className="col-sm-12 col-lg-6 mx-auto mt-4">
                         <Flip bottom big>
-                            <p className="display-3 text-light">Tech Stack</p>
+                            <p className="display-3 text-light" id="techTitle">Tech Stack</p>
                             <br />
                         </Flip>
                     </div>
