@@ -7,6 +7,7 @@ import Canvas from './Particles';
 import Header from './Header';
 import About from './About';
 import Tech from './Tech';
+import Projects from './Projects';
 
 function App() {
     return (
@@ -17,7 +18,7 @@ function App() {
             </div>
             <About />
             <Tech />
-
+            <Projects />
         </div>
     );
 }
