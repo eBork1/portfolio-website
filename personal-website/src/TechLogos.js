@@ -56,8 +56,8 @@ class Logos extends React.Component {
                             color="#fb503b"
                             className="mx-2"
                         />
-                        <img className="pb-2 mb-3" src="https://img.icons8.com/color/48/000000/firebase.png"></img>
-                        <img className="pb-2 mb-3" src="https://img.icons8.com/color/48/000000/google-cloud-platform.png"></img>
+                        <img className="pb-2 mb-3" src="https://img.icons8.com/color/48/000000/firebase.png" alt="firebase"></img>
+                        <img className="pb-2 mb-3" src="https://img.icons8.com/color/48/000000/google-cloud-platform.png" alt="google cloud"></img>
                     </div>
                 </div>
             </div>
