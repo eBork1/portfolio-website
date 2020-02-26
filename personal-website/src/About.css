@@ -1,4 +1,9 @@
-#cont{
-    background-color: white;
+#aboutTitle {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
+#cont{
+    background-color: white;
+    height: 100vh;
+}
