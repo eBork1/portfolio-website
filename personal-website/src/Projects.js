@@ -55,15 +55,27 @@ class Projects extends React.Component {
                                         <h4 className="font-weight-bold">{repo.name}</h4>
                                         <a href={repo.html_url} target="_blank" rel="noopener noreferrer"><p>{repo.html_url}</p></a>
                                         <a href={repo.homepage} target="_blank" rel="noopener noreferrer"><p>{repo.homepage}</p></a>
-                                        <p>Created: {repo.created_at.slice(0,10)}</p>
-                                        <p>Updated: {repo.updated_at.slice(0,10)}</p>
+                                        <p>Created: {repo.created_at.slice(0, 10)}</p>
+                                        <p>Updated: {repo.updated_at.slice(0, 10)}</p>
                                     </div>
                                 )
                             })}
                         </div>
                     </Fade>
                 </div>
-
+                <div className="row">
+                    <div className="col-sm-12 col-lg-8 mx-auto mt-4 mb-5 p-0">
+                        <p className="display-3 text-dark" id="ProjectsTitle">My Bootcamp Portfolio</p>
+                        <p className="text-dark">
+                            This link will take you to my portfolio of some early javascript projects I did during my full stack web development bootcamp. Best viewed
+                        in mobile as it was made to simulate a mobile app style view. These projects were done shortly after first learning javascript. They have been slightly refactored
+                        for bug fixes.
+                        </p>
+                        <a href="https://etb-bootcamp-portfolio.firebaseapp.com" target="_blank" rel="noopener noreferrer">
+                            <p className="btn-block p-3 shadow text-white bg-primary">Bootcamp portfolio</p>
+                        </a>
+                    </div>
+                </div>
             </div>
         )
     }
